@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+}
+
+.title {
+  background-color: #008071;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+}
+
+.chat-panel {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.message-wrapper {
+  height: 60vh;
+  max-height: 700px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.message-text {
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+.author {
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.form {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input-box {
+  width: 96%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #008071;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.message-user1 {
+  justify-content: flex-end;
+}
+
+.message-user2 {
+  justify-content: flex-start;
+}
+
+.message-user1 .message-text {
+  border-radius: 8px 8px 0 8px;
+}
+
+.message-user2 .message-text {
+  border-radius: 8px 8px 8px 0;
+}
+
+.author-wrapper {
+  position: absolute;
+  top: -10px;
+}
+
+/* Tablet Styles (min-width: 768px) */
+@media (min-width: 768px) {
+  .chat-panel {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+  .chat-panel {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* Desktop Styles (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .chat-panel {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
